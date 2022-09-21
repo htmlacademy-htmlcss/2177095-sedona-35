@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Аида Ахтариева](https://up.htmlacademy.ru/htmlcss/35/user/2177095).
-* Наставник: `Неизвестно`.
+* Наставник:[Анна Лисененкова] (https:up.//htmlacademy.ru/profile/ankhena)
 
 ---
 
