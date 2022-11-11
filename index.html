@@ -9,14 +9,11 @@
     <div class="page-wrapper">
       <header class="page-header">
         <nav class="navigation">
-          <a class="navigation-link">
-            <img
-              class="page-header-logo"
-              src="images/icons/logo.svg"
-              alt="Логотип города Седона."
-              width="140"
+          <a class="navigation-logo" href="index.html">
+            <img class="page-header-logo" src="images/icons/logo.svg" alt="Логотип города Седона." width="140"
               height="70">
           </a>
+
           <ul class="navigation-list">
             <li class="navigation-item">
               <a class="navigation-link" href="index.html">Главная</a>
@@ -29,14 +26,12 @@
             </li>
           </ul>
           <ul class="navigation-list navigation-user">
-            <li class="navigation-item-user">
-              <a class="navigation-link navigation-link-search" href="#">
-                <span class="visually-hidden">Поиск.</span>
-              </a>
+            <li class="navigation-item">
+              <a class="navigation-link-search" href="#">
+                <span class="visually-hidden">Поиск.</span></a>
             </li>
             <li class="navigation-item-user">
-              <a class="navigation-link navigation-link-favorites" href="#">
-                <span class="favorite-count">12.</span>
+              <a class="navigation-link-favorites" href="#">
                 <span class="visually-hidden">отелей добавлено в избранное.</span>
               </a>
             </li>
@@ -46,7 +41,7 @@
           </ul>
         </nav>
       </header>
-      <main class="main-container main-index">
+      <main class="main-container">
         <section class="intro">
           <h1 class="visually-hidden">Сайт городка Седона.</h1>
           <img class="intro-image" src="images/background/welcome-image.svg" alt="Добро пожаловать в Седону."/>
@@ -113,7 +108,7 @@
         <section class="search">
           <h2 class="search-title">Заинтересовались?</h2>
           <p class="search-description">
-            Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
+            Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне
           </p>
           <a class="button button-brown button-search" href="#">Поиск гостиницы в Седоне</a>
         </section>
@@ -160,7 +155,9 @@
           </ul>
         </section>
         <a class="phone-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        <a class="footer-logo-link" href="https://htmlacademy.ru/"></a>
+        <a class="footer-logo-link" href="https://htmlacademy.ru/"><svg width="115" height="34" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="images/icons/html-academy.svg#logo" />
+        </svg></a>
       </footer>
     </div>
   </body>
