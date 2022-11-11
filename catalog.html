@@ -28,7 +28,7 @@
               <a class="navigation-link navigation-link-current" href="#">О Седоне</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="catalog.html">Гостиницы</a>
+              <a class="navigation-link">Гостиницы</a>
             </li>
           </ul>
           <ul class="navigation-list navigation-user">
@@ -49,7 +49,7 @@
       <main class="main-inner">
         <div class="filter-block">
           <header class="inner-header">
-            <h1 class="inner-header-title">Гостиницы Седоны.</h1>
+            <h1 class="inner-header-title">Гостиницы Седоны</h1>
             <ul class="breadcrumbs">
               <li class="breadcrumbs-item">
                 <a class="breadcrumbs-link" href="index.html">
@@ -57,12 +57,12 @@
                 </a>
               </li>
               <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link">Гостиницы</a>
+                <a class="breadcrumbs-link" aria-current="page">Гостиницы</a>
               </li>
             </ul>
           </header>
           <h2 class="visually-hidden">Фильтр для поиска гостиниц в Седоне.</h2>
-          <form class="catalog-filter-search" action="https://echo.htmlacademy.ru/" method="get">
+          <form class="search-filter" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="search-filter-group">
               <legend class="search-filter-title">Инфраструктура:</legend>
               <ul class="search-filter-list">
@@ -116,10 +116,16 @@
               </ul>
             </fieldset>
 
-            <!-- Добавим раздел со стоимостью -->
 
-            <button class="button button-blue" type="submit">Применить</button>
-            <button class="button button-reset" type="reset">Сбросить</button>
+            <fieldset class="search-filter-group search-filter-group-wide">
+              <legend class="search-filter-title">Стоимость, ₽:</legend>
+              <!-- Добавим раздел со стоимостью -->
+            </fieldset>
+
+            <p class="search-filter-buttons">
+              <button class="button button-blue" type="submit">Применить</button>
+              <button class="button button-reset" type="reset">Сбросить</button>
+            </p>
           </form>
         </div>
         <section class="result">
@@ -158,11 +164,11 @@
                 <img
                   class="hotel-card-image"
                   src="images/content/hotel-amara-resort-spa.jpg"
-                  alt="фото гостиницы Amara Resort&Spa."
+                  alt="фото гостиницы Amara Resort & Spa."
                   width="300"
                   height="212"
                 />
-                <h3 class="hotel-card-title">Amara Resort&Spa</h3>
+                <h3 class="hotel-card-title">Amara Resort & Spa</h3>
               </a>
              <div class="hotel-card-content">
                 <span class="hotel-card-description">Гостиница</span>
@@ -238,7 +244,7 @@
                 <span class="hotel-stars hotel-stars-2">
                   <span class="visually-hidden">2 звезды.</span>
                 </span>
-                <span class="button button-grey hotel-card-rating">Рейтинг: 5,0.</span>
+                <span class="button button-grey hotel-card-rating">Рейтинг: 5,0</span>
               </div>
             </li>
           </ul>
@@ -256,7 +262,7 @@
               <a class="pagination-link" href="#">4</a>
             </li>
             <li class="pagination-item">
-              <span class="pagination-link pagination-divider">...</span>
+              <span class="pagination-link pagination-divider">…</span>
             </li>
             <li class="pagination-item">
               <a class="pagination-link" href="#">10</a>
@@ -266,10 +272,10 @@
 
         <section class="newsletter newsletter-inner">
           <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
-          <p class="newsletter-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <p class="newsletter-description">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
 
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label>
+            <label class="newsletter-label">
               <input
                 class="field"
                 placeholder="Ваш e-mail"
@@ -290,31 +296,28 @@
 
           <ul class="footer-social-list">
             <li class="footer-social-item">
-              <a class="button" href="https://vk.com/htmlacademy">
+              <a class="footer-social-link" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">Седона ВКонтакте.</span>
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="button" href="https://t.me/htmlacademy">
+              <a class="footer-social-link" href="https://t.me/htmlacademy">
                 <span class="visually-hidden">Седона в Телеграм.</span>
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+              <a class="footer-social-link" href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">Седона в Ютуб.</span>
               </a>
             </li>
           </ul>
         </section>
-        <section class="contacts">
-          <h2 class="visually-hidden">Номер телефона.</h2>
-          <a class="phone-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        </section>
-
-        <section class="copyright">
-          <h2 class="visually-hidden">Сайт сделан в HTML Academy.</h2>
-          <a class="footer-logo-link" href="https://htmlacademy.ru/"> </a>
-        </section>
+        <a class="phone-number footer-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        <a class="footer-logo-link footer-link" href="https://htmlacademy.ru/">
+          <svg width="115" height="34" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="images/icons/html-academy.svg#logo" />
+          </svg>
+        </a>
       </footer>
     </div>
   </body>
