@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title>Html Academy Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
   </head>
   <body>
     <div class="page-wrapper">
@@ -16,26 +24,27 @@
 
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a class="navigation-link">Главная</a>
+              <a class="navigation-link navigation-link-current" aria-current="page">Главная</a>
             </li>
-            <li class="navigation item">
-              <a class="navigation-link navigation-link-current" href="#">О Седоне</a>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">О Седоне</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
           <ul class="navigation-list navigation-user">
-            <li class="navigation-item">
-              <a class="navigation-link-search" href="#">
+            <li class="navigation-item-user">
+              <a class="navigation-link-service navigation-link-search" href="#">
                 <span class="visually-hidden">Поиск.</span></a>
             </li>
             <li class="navigation-item-user">
-              <a class="navigation-link-favorites" href="#">
+              <a class="navigation-link-service navigation-link-favorites" href="#">
+                <span class="count-label">12</span>
                 <span class="visually-hidden">отелей добавлено в избранное.</span>
               </a>
             </li>
-            <li class="navigation-item-user ">
+            <li class="navigation-item-user">
               <a class="button button-brown navigation-link-user" href="#">Хочу сюда!</a>
             </li>
           </ul>
@@ -44,7 +53,7 @@
       <main class="main-container">
         <section class="intro">
           <h1 class="visually-hidden">Сайт городка Седона.</h1>
-          <img class="intro-image" src="images/background/welcome-image.svg" alt="Добро пожаловать в Седону."/>
+          <img class="intro-image" src="images/background/welcome-image.svg" alt="Добро пожаловать в Седону.">
         </section>
         <section class="advantages">
           <div class="advantages-heading">
@@ -53,7 +62,7 @@
           </div>
           <div class="advantages-card">
             <div class="advantages-card-content">
-              <h3 class="advantages-card-title">Настоящий городок</h3>
+              <h3 class="advantages-title">Настоящий городок</h3>
               <p class="advantages-card-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
             <img
@@ -85,20 +94,20 @@
               height="384"
               width="800">
             <div class="advantages-card-content">
-              <h3 class="advantages-card-title">Там есть<br>мост дьявола</h3>
+              <h3 class="advantages-title">Там есть<br>мост дьявола</h3>
               <p class="advantages-card-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
             </div>
           </div>
           <ul class="services-list">
-            <li class="services-item">
+            <li class="services-item services-item-house">
               <h2 class="services-title">Жильё</h2>
               <p class="services-description">Рекомендуем пожить в&nbsp;настоящем мотеле,<br>все как в кино!</p>
             </li>
-            <li class="services-item">
+            <li class="services-item services-item-food">
               <h2 class="services-title">Еда</h2>
               <p class="services-description">Всегда заказывайте<br>топовый фирменный бургер, вы не разочаруетесь!</p>
             </li>
-            <li class="services-item">
+            <li class="services-item services-item-souvenir">
               <h2 class="services-title">Сувениры</h2>
               <p class="services-description">Не только китайского,<br>но и настоящего местного производства!</p>
             </li>
@@ -124,9 +133,8 @@
                 placeholder="Ваш e-mail"
                 type="email"
                 name="newsletter-email"
-                id="newsletter-email"
                 required>
-              <span class="visually-hidden">Email.</span>
+              <span class="visually-hidden">Ваш e-mail.</span>
             </label>
             <button class="button button-blue newsletter-button" type="submit">Подписаться</button>
           </form>
@@ -138,17 +146,17 @@
 
           <ul class="footer-social-list">
             <li class="footer-social-item">
-              <a class="footer-social-link" href="https://vk.com/htmlacademy">
+              <a class="footer-social-link footer-social-link-vkontakte" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">Седона ВКонтакте.</span>
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="footer-social-link" href="https://t.me/htmlacademy">
+              <a class="footer-social-link footer-social-link-telegram" href="https://t.me/htmlacademy">
                 <span class="visually-hidden">Седона в Телеграм.</span>
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="footer-social-link" href="https://www.youtube.com/user/htmlacademyru">
+              <a class="footer-social-link footer-social-link-youtube" href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">Седона в Ютуб.</span>
               </a>
             </li>
@@ -156,11 +164,80 @@
         </section>
         <a class="phone-number footer-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
         <a class="footer-logo-link footer-link" href="https://htmlacademy.ru/">
+          <span class="visually-hidden">Сайт разработчика.</span>
           <svg width="115" height="34" xmlns="http://www.w3.org/2000/svg">
             <use xlink:href="images/icons/html-academy.svg#logo" />
           </svg>
         </a>
       </footer>
+    </div>
+
+    <div class="modal modal-hidden">
+      <div class="modal-inner">
+        <button class="modal-close" type="button">
+          <span class="visually-hidden">Закрыть окно.</span>
+        </button>
+
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+
+          <form class="form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="form-group form-group-wide">
+              <label class="form-label" for="date-checkin">
+                Дата Заезда:
+              </label>
+              <input class="form-input" id="date-checkin" name="date_checkin" type="text" value="27 апреля 2020" placeholder="Укажите дату" required>
+              <span class="form-status form-error">Мы не можем отправить вас в прошлое.</span>
+              <button class="form-helper form-helper-calendar" type="button">
+                <span class="visually-hidden">Выбрать дату.</span>
+              </button>
+            </p>
+            <p class="form-group form-group-wide">
+              <label class="form-label" for="date-checkout">
+                Дата Выезда:
+              </label>
+              <input class="form-input" id="date-checkout" name="date__checkout" type="text" value="1 сентября 2023" placeholder="Укажите дату" required>
+              <span class="form-status">На эти даты есть свободные номера. Пока есть.</span>
+              <button class="form-helper form-helper-calendar" type="button">
+                <span class="visually-hidden">Выбрать дату.</span>
+              </button>
+            </p>
+
+            <p class="form-group">
+              <label class="form-label" for="count-adults">
+                Взрослые:
+              </label>
+              <input class="form-input form-input-count" id="count-adults" name="count_adults" type="number" value="2" min="1" required>
+              <button class="form-helper form-helper-step-down" type="button">
+                <span class="visually-hidden">Меньше.</span>
+              </button>
+              <button class="form-helper form-helper-step-up" type="button">
+                <span class="visually-hidden">Больше.</span>
+              </button>
+            </p>
+
+            <p class="form-group">
+              <label class="form-label form-label-right-side" for="count-children">
+                Дети:
+                <span class="tooltip" tabindex="0">
+                  <span class="tooltip-text" role="tooltip">
+                    Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                  </span>
+                </span>
+              </label>
+              <input class="form-input form-input-count" id="count-children" name="count_children" type="number" value="2" min="0">
+              <button class="form-helper form-helper-step-down" type="button">
+                <span class="visually-hidden">Меньше.</span>
+              </button>
+              <button class="form-helper form-helper-step-up" type="button">
+                <span class="visually-hidden">Больше.</span>
+              </button>
+            </p>
+
+            <button class="button button-blue form-button" type="submit">Найти</button>
+          </form>
+        </section>
+      </div>
     </div>
   </body>
 </html>
